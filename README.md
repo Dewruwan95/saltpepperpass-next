@@ -1,6 +1,6 @@
-# 🧂🔑 saltpepperpass-node
+# 🧂🔑 saltpepperpass-next
 
-[![npm version](https://img.shields.io/npm/v/saltpepperpass-node.svg)](https://www.npmjs.com/package/saltpepperpass-next)
+[![npm version](https://img.shields.io/npm/v/saltpepperpass-next.svg)](https://www.npmjs.com/package/saltpepperpass-next)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A Next.js package that securely hashes passwords using bcrypt with customizable salt length, pepper text, and hashing rounds. It enhances password security by salting and peppering before hashing, making it ideal for backend applications.
@@ -18,7 +18,7 @@ A Next.js package that securely hashes passwords using bcrypt with customizable 
 ## Installation
 
 ```bash
-npm install saltpepperpass-node
+npm install saltpepperpass-next
 ```
 
 ## Setup
@@ -37,13 +37,13 @@ HASHING_ROUNDS=10  # Number of hashing rounds
 
 ```typescript
 // Named imports (recommended)
-import { generateHash, verifyHash } from "saltpepperpass-node";
+import { generateHash, verifyHash } from "saltpepperpass-next";
 
 // Or using default import
-import saltAndPepperPass from "saltpepperpass-node";
+import saltAndPepperPass from "saltpepperpass-next";
 
 // Using CommonJS
-const saltAndPepperPass = require("saltpepperpass-node");
+const saltAndPepperPass = require("saltpepperpass-next");
 ```
 
 ## Usage
@@ -51,7 +51,7 @@ const saltAndPepperPass = require("saltpepperpass-node");
 ### Using Named Imports (Recommended)
 
 ```typescript
-import { generateHash, verifyHash } from "saltpepperpass-node";
+import { generateHash, verifyHash } from "saltpepperpass-next";
 
 // Generate hash
 const { hash, saltingText } = generateHash("myPassword");
@@ -63,7 +63,7 @@ const isValid = verifyHash("myPassword", saltingText, hash);
 ### Using Default Import
 
 ```typescript
-import saltAndPepperPass from "saltpepperpass-node";
+import saltAndPepperPass from "saltpepperpass-next";
 
 // Generate a hash
 const password = "mySecurePassword123";
